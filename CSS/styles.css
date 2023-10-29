@@ -1,0 +1,312 @@
+/* Set a background color and text color */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    position: fixed; 
+    bottom: 0; 
+    top: 0;
+    width: 100%; 
+    border-top: 20px;
+    margin-top: 50px;
+}
+/* Video Background Styles */
+#videoBG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the video behind other content */ 
+    background-color: #fff;
+}
+#videoBG iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border: none;
+}
+/* Navigation bar styles */
+nav {
+    background-color: #007acc;
+    color: #fff;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    padding: 20px 20px;
+    z-index: 100; 
+}
+    
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+    
+nav ul li {
+    display: inline;
+    margin-right: 100px;
+}
+    
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#logo {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    z-index: 1000; 
+    width: 100px; 
+    height: auto; 
+}
+#logoFB, #logoIN, #logoInst {
+    width: 35px;
+    height: 35px;
+}
+
+/* Header styles */
+header {
+    top: 15px;
+    background-size: cover;
+    border-top: 10px;
+    font-style: italic;
+    text-align: center;
+    width: 90%;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #007acc;
+}
+header h2 {
+    font-size: 25px;
+    color: #007acc; 
+    margin: 0; 
+}
+
+/* Main content area */
+main {
+    max-width: 800px;
+    margin: 20px 0 40px 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1; 
+    background-color: rgba(253, 252, 252, 0.8); 
+}
+
+main h1, main h2 {
+    color: #007acc;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center; 
+}
+
+p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 20px;  
+}
+
+.slideshow-container {
+    float: left;
+    width: 50%;
+    left: 20%;
+}
+.mySlides img {
+    width: 750px;
+    height: 350px; 
+}
+.most-popular-service {
+    float: right;
+    width: 40%;
+    font-size: 20px;
+    font-style: italic;
+}
+
+div p {
+    margin: 10px;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(166, 7, 7);
+}
+/* address p {
+    margin: 10px;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(166, 7, 7);
+} */
+
+div ul {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(1, 44, 18);
+}
+div li {
+    padding: 10px;
+}
+
+dl {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(1, 44, 18);  
+}
+dt {
+    padding: 10px;
+}
+
+
+/* Form styles */
+form label {
+    display: block;
+    margin-left: 20px;
+    border-top: 10px;
+    border-left: 20px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 97%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #acabab;
+    border-radius: 5px;
+    font-size: 16px;
+}
+main form {
+    background-color: rgba(151, 209, 168, 0.929)
+}
+
+form button[type="submit"] {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #007acc;
+    color: #fff;
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    width: 100%; 
+}
+footer p {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Slideshow container */
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 2px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+table {
+    border-collapse: separate;
+    border-radius: 70px;
+    position: fixed;
+    bottom: 65px;
+    right: 70px;
+    width: 50%;
+    height: 28%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    z-index: 9999; 
+    background-color: rgba(196, 245, 225, 0.2); 
+    border: 1px solid rgb(1, 116, 55); 
+}
+h3 {
+    font-style: italic;
+    font-size: 25px;
+    color: rgb(166, 7, 7);
+    margin: 0; 
+    padding: 0; 
+    display: inline-block; 
+}
+h4 {
+    font-style: italic;
+    font-size: 18px;
+    color: rgb(3, 46, 237);
+    margin: 0; 
+    padding: 0; 
+}
+
+td {
+    border: 1px solid transparent;
+    text-align: center;
+    padding: 0; 
+    vertical-align: middle; 
+}
+
+.img-red-arrow {
+    width: 55px;
+    height: 40px;
+}
+

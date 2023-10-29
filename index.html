@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JavaScript/JavaScript.js"></script>
+    <title>Fresh Foods Loyalty Plan</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Logo -->
+        <img src="images/FreshFoodsLogo.png" alt="Logo" id="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="support.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Video Background Container -->
+    <div id="videoBG">
+        <!-- YouTube Embed Iframe -->
+        <iframe
+            src="https://www.youtube.com/embed/jrqnP18iKmI?autoplay=1&mute=1&controls=0&loop=1&playlist=jrqnP18iKmI" allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Banner -->
+    <header>
+        <h1>Welcome to the Fresh Foods Loyalty Plan</h1>
+        <p>
+            Here at Fresh Foods, we value our customers as much as they<br> value our quality products.
+            We thought, what better way<br> to stay connected and show support than to offer rewards.
+        </p>  
+        
+    </header>
+    <!-- Content Area -->
+    <div>  
+        <div style="float: left; width: 50%;"> 
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/yellow1.1.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/orange2.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/red1.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/Green1.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/yellow2.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/blue1.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/orange1.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/yellow1.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/Green2.png" alt="Food">
+                </div>   
+
+                <div class="mySlides fade">
+                    <img src="images/grey1.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/yellow4.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/blue2.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/whight1.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/yellow3.png" alt="Food">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/Green3.png" alt="Food">
+                </div>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+
+        <div style="float: right; width: 45%">
+            <p>Most popular service:</p>
+            <ul>
+                <li>selection of food products for a special<br> menu (holidays, diets, etc.)</li>
+                <li>ready-made hot meals</li>
+                <li>frozen semi-finished products</li>
+                <li>catering</li>
+                <li>delivery food</li>
+            </ul>
+
+        </div>    
+    </div>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+<table>
+    <tr>
+        <td colspan="2"><h3>Reward</h3></td>
+        <td><img src="images/red_arrow.png" alt="Red arrow" class="img-red-arrow"></td>
+        <td><h3>10%</h3> 😍</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><img src="images/red_arrow.png" alt="Red arrow" class="img-red-arrow"></td>
+        <td><h3>7,5% </h3> 🤩</td>
+        <td><h4>$1000 and more</h4></td>
+    </tr>
+    <tr>
+        <td><img src="images/red_arrow.png" alt="Red arrow" class="img-red-arrow"></td> 
+        <td><h3>5,0% </h3> 😃</td> 
+        <td><h4>$500 - $999</h4></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><h3>2,5% </h3> 😊</td>
+        <td><h4>$200 - $499</h4></td>
+        <td colspan="2"><h4>Monthly Spend</h4></td>
+        
+    </tr>
+    <tr>
+        <td><h4>$100 - $199</h4></td>
+        <td></td>
+        <td colspan="2"></td>
+        
+    </tr>
+</table>
+    <!-- Footer -->
+    <footer>
+        <p id="footer">&copy; Fresh Foods New Zealand 2023</p> 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JavaScript/signup.js"></script>
+    <title>Sign Up - Fresh Foods Loyalty Plan</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Logo -->
+        <img src="images/FreshFoodsLogo.png" alt="Your Logo" id="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="support.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Video Background Container -->
+    <div id="videoBG">
+            <!-- YouTube Embed Iframe -->
+        <iframe
+            src="https://www.youtube.com/embed/jrqnP18iKmI?autoplay=1&mute=1&controls=0&loop=1&playlist=jrqnP18iKmI" allowfullscreen>
+        </iframe>
+    </div>
+    <header>
+        <h1>How will it work?</h1>
+        <p>
+            Just like our simple Fresh Food products,<br> we want to keep our loyalty program simple and fresh.<br>
+            Sign up today and start earning.
+        </p>
+    </header>
+    <!-- Content Area -->
+    <main>
+        <!-- Sign-up Form -->
+        <div>
+        <form id="signupForm" onsubmit="showFormData(event)">
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+                
+            <label for="phone">Contact Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+                
+            <button type="submit">Sign Up</button>
+        </form>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p id="footer">&copy; Fresh Foods New Zealand 2023</p> 
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JavaScript/signup.js"></script>
+    <title>Contact Us - Fresh Foods Loyalty Plan</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Logo -->
+        <img src="images/FreshFoodsLogo.png" alt="Your Logo" id="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="support.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Video Background Container -->
+    <div id="videoBG">
+        <!-- YouTube Embed Iframe -->
+        <iframe  
+            src="https://www.youtube.com/embed/jrqnP18iKmI?autoplay=1&mute=1&controls=0&loop=1&playlist=jrqnP18iKmI" allowfullscreen>
+        </iframe>
+    </div>
+    <!-- Banner -->
+    <header>
+        <!-- Add relevant banner content here -->
+        <h1>Contact Us</h1>
+        <p>If you have any questions or need assistance with<br> our loyalty program, please feel free to contact us:</p>
+    </header>
+    <!-- Content Area -->
+    <main>
+        <div style="float: left; width: 50%;">
+            <dl>
+                <dt>Email: <a href="mailto:info@freshfoods.com">info@freshfoods.com</a></dt>
+                <dd></dd>
+                <dt>Phone: <a href="tel:">+64 (234) 567-890</a></dt>
+                <dd></dd>
+                <dt>Address:<br> <a href="address"></a>20 Hibiscus Coast Highway, Silverdale, Auckland,<br> New Zealand, 0993</dt>
+                <dd></dd>
+                <dt><img src="images/Facebook.png" alt="Facebook" id="logoFB">
+                <a href="https://www.facebook.com/YuliaHodgson2022/" target="_blank">Yulia Hodgson</a></dt>
+                <dd></dd>
+                <dt><img src="images/Linkedin.png" alt="Linkedin" id="logoIN">
+                <a href="https://www.linkedin.com/in/yulia-hodgson-438a36254/" target="_blank">Yulia Hodgson</a></dt>
+                <dd></dd>
+                <dt><img src="images/Instagram2.jpg" alt="Instagram" id="logoInst">
+                <a href="https://www.instagram.com/yulia_hodgson/" target="_blank">Yulia Hodgson</a></dt>
+                <dd></dd>
+            </dl>
+        </div>
+        <!-- Link to Map for Directions -->
+        <div style="float: right; width: 50%;">
+            <h2>Directions</h2>
+            <a href="https://www.google.com/maps?q=123+Fresh+Street,+Auckland,+New+Zealand" target="_blank">View on Map</a>
+        
+            <div id="map" style="width:100%; float: right; height:450px;"></div>
+        </div>
+        <script>       //need to move js file
+            function myMap() {
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {
+                    center: new google.maps.LatLng(-36.616036, 174.670931),
+                    zoom: 15
+                };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsEvAruwEv27qZrdco2-N46ik4EZY8F6o&callback=myMap" async defer></script>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p id="footer">&copy; Fresh Foods New Zealand 2023</p> 
+    </footer>
+</body>
+</html>
